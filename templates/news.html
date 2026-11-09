@@ -1,0 +1,155 @@
+{% extends 'basa.html' %}
+{% block news %}
+
+<main class="news-container">
+
+    <section class="news-hero">
+        <span class="news-eyebrow">НОВОСТИ МАГАЗИНА</span>
+        <h1>События, новинки и советы</h1>
+        <p class="hero-subtitle">
+            Рассказываем о коллекциях, полезном уходе и жизни нашего магазина.
+        </p>
+        <a href="/prod" class="news-hero-btn">Перейти в каталог <span>→</span></a>
+    </section>
+
+    <section class="news-intro">
+        <div class="news-intro-icon" aria-hidden="true">💌</div>
+        <div>
+            <h2>Что нового?</h2>
+            <p>
+                Здесь собраны новости магазина: сезонные поступления,
+                рекомендации по выбору обуви и простые советы по уходу.
+                Заглядывайте, чтобы не пропустить полезные обновления.
+            </p>
+        </div>
+    </section>
+
+    <section class="news-list-section">
+        <div class="news-section-heading">
+            <div>
+                <span class="news-eyebrow">ЛЕНТА МАГАЗИНА</span>
+                <h2>Последние публикации</h2>
+            </div>
+            <span class="news-count">6 публикаций</span>
+        </div>
+
+        <div class="news-feed">
+
+            <article class="news-card">
+                <div class="news-icon news-icon-sale" aria-hidden="true">🍂</div>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <time class="news-date" datetime="2026-10-25">25 октября 2026</time>
+                        <span class="news-tag">Акции</span>
+                    </div>
+                    <h3>Осеннее обновление: выбираем обувь на каждый день</h3>
+                    <p>
+                        Собрали модели для прохладной погоды: ботинки, сапоги
+                        и повседневную обувь. При выборе обращайте внимание
+                        на материал верха, подошву и удобство посадки.
+                    </p>
+                    <a class="news-read-link" href="/prod">Посмотреть каталог <span>→</span></a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="news-icon news-icon-new" aria-hidden="true">✨</div>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <time class="news-date" datetime="2026-10-20">20 октября 2026</time>
+                        <span class="news-tag">Новинки</span>
+                    </div>
+                    <h3>Встречаем сезон зимней обуви</h3>
+                    <p>
+                        В каталоге появились модели для холодного времени года.
+                        Сравните фасоны, материалы и особенности подошвы,
+                        чтобы подобрать пару под свой привычный маршрут.
+                    </p>
+                    <a class="news-read-link" href="/prod">Выбрать зимнюю обувь <span>→</span></a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="news-icon news-icon-guide" aria-hidden="true">👞</div>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <time class="news-date" datetime="2026-10-18">18 октября 2026</time>
+                        <span class="news-tag">Советы</span>
+                    </div>
+                    <h3>Как подобрать ботинки для осени</h3>
+                    <p>
+                        Для повседневной носки важны удобная колодка,
+                        подходящий размер и практичная подошва. Если выбираете
+                        обувь онлайн, проверьте таблицу размеров и описание модели.
+                    </p>
+                    <a class="news-read-link" href="/prod">Найти свою пару <span>→</span></a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="news-icon news-icon-care" aria-hidden="true">🧴</div>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <time class="news-date" datetime="2026-10-15">15 октября 2026</time>
+                        <span class="news-tag">Уход</span>
+                    </div>
+                    <h3>Три простых правила ухода за обувью</h3>
+                    <p>
+                        Удаляйте загрязнения после прогулки, подбирайте средства
+                        по типу материала и сушите обувь вдали от батарей.
+                        Перед применением нового средства проверьте его на
+                        незаметном участке.
+                    </p>
+                    <a class="news-read-link" href="/prod">Перейти в каталог <span>→</span></a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="news-icon news-icon-delivery" aria-hidden="true">📦</div>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <time class="news-date" datetime="2026-10-10">10 октября 2026</time>
+                        <span class="news-tag">Магазин</span>
+                    </div>
+                    <h3>Как узнать условия доставки заказа</h3>
+                    <p>
+                        Доступные способы, сроки и стоимость доставки могут
+                        зависеть от адреса и выбранного товара. Перед оформлением
+                        заказа уточните актуальные условия у магазина.
+                    </p>
+                    <a class="news-read-link" href="/about">Контакты магазина <span>→</span></a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="news-icon news-icon-eco" aria-hidden="true">🌿</div>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <time class="news-date" datetime="2026-10-05">5 октября 2026</time>
+                        <span class="news-tag">Новости</span>
+                    </div>
+                    <h3>Бережный уход помогает продлить жизнь любимой паре</h3>
+                    <p>
+                        Храните обувь в сухом месте, используйте подходящие
+                        средства и не оставляйте её надолго рядом с источниками
+                        тепла. Несложный уход помогает сохранить внешний вид пары.
+                    </p>
+                    <a class="news-read-link" href="/prod">Выбрать обувь <span>→</span></a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="news-bottom-cta">
+        <div>
+            <span class="news-eyebrow">ИЩЕТЕ НОВУЮ ПАРУ?</span>
+            <h2>Загляните в каталог</h2>
+            <p>Выберите обувь для повседневных дел, прогулок и особых случаев.</p>
+        </div>
+        <a href="/prod" class="cta-btn">Смотреть каталог →</a>
+    </section>
+
+</main>
+
+{% endblock news %}

@@ -1,0 +1,330 @@
+{% extends 'basa.html' %}
+{% block onas %}
+
+<div class="about-container">
+
+    <!-- HERO-БЛОК С ФОНОМ -->
+    <section class="about-hero-modern">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">С 2015 года</span>
+            <h1>О нашем магазине</h1>
+            <p class="hero-subtitle">Качественная обувь, созданная с любовью и заботой о вас</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">9+</span>
+                    <span class="stat-label">лет на рынке</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">довольных клиентов</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">моделей обуви</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ИСТОРИЯ КОМПАНИИ -->
+    <section class="about-story">
+        <div class="container-split">
+            <div class="story-content">
+                <span class="section-badge">НАША ИСТОРИЯ</span>
+                <h2>Как всё начиналось</h2>
+                <p>Добро пожаловать в наш обувной магазин! Мы — команда настоящих энтузиастов, искренне влюбленных в качественную обувь и комфорт.</p>
+                <p>Наша история началась в 2015 году с простой идеи: доказать всем, что стильная обувь может быть по-настоящему удобной, а качественная — доступной каждому. Мы открыли небольшой магазинчик в центре Москвы, и с первого дня нашей целью было не просто продавать обувь, а помогать людям находить идеальную пару.</p>
+                <p>Сегодня мы выросли из маленького магазинчика в полноценную сеть, но наши ценности остались прежними: честность, качество и индивидуальный подход к каждому клиенту.</p>
+                <div class="story-signature">
+                    <p><strong>С уважением, команда обувного магазина</strong></p>
+                </div>
+            </div>
+            <div class="story-images">
+                <div class="image-stack">
+                    <img src="{{ url_for('static', filename='story1.jpg') }}" 
+                         alt="Наш магазин" 
+                         class="stack-img stack-img-1"
+                         onerror="this.style.display='none'">
+                    <img src="{{ url_for('static', filename='story2.jpg') }}" 
+                         alt="Наша команда" 
+                         class="stack-img stack-img-2"
+                         onerror="this.style.display='none'">
+                    <img src="{{ url_for('static', filename='story3.jpg') }}" 
+                         alt="Обувь" 
+                         class="stack-img stack-img-3"
+                         onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- МИССИЯ И ЦЕННОСТИ -->
+    <section class="about-mission-modern">
+        <div class="mission-grid">
+            <div class="mission-card">
+                <div class="mission-icon">🎯</div>
+                <h3>Наша миссия</h3>
+                <p>Мы стремимся к тому, чтобы каждый наш клиент нашел свою идеальную пару. Мы тщательно отбираем каждую модель, обращая внимание на качество швов, надежность материалов и комфорт колодки.</p>
+            </div>
+            <div class="mission-card">
+                <div class="mission-icon">💎</div>
+                <h3>Наши ценности</h3>
+                <p>Мы работаем только с проверенными поставщиками и фабриками, которые используют натуральную кожу, овчину и замшу премиум-класса. Для нас важно, чтобы обувь не только красиво выглядела, но и служила вам долгие годы.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА С ИКОНКАМИ -->
+    <section class="about-features-modern">
+        <div class="section-header">
+            <span class="section-badge">ПОЧЕМУ МЫ</span>
+            <h2>Почему нам доверяют?</h2>
+            <p>Мы создали условия, чтобы каждый клиент чувствовал себя комфортно и уверенно</p>
+        </div>
+        <div class="features-grid-modern">
+            <div class="feature-card-modern">
+                <div class="feature-icon-box">
+                    <span class="feature-emoji">🛍️</span>
+                </div>
+                <h3>Широкий ассортимент</h3>
+                <p>От изящных женских каблуков и туфель до теплых, практичных мужских ботинок и уютных зимних угг. У нас каждый найдет что-то для себя.</p>
+                <ul class="feature-list">
+                    <li>Женская обувь</li>
+                    <li>Мужская обувь</li>
+                    <li>Детская обувь</li>
+                    <li>Аксессуары</li>
+                </ul>
+            </div>
+            <div class="feature-card-modern">
+                <div class="feature-icon-box">
+                    <span class="feature-emoji">✅</span>
+                </div>
+                <h3>Гарантия качества</h3>
+                <p>Мы лично проверяем каждую партию товара перед тем, как выставить её на продажу. Никакого брака и компромиссов с качеством.</p>
+                <ul class="feature-list">
+                    <li>Проверка каждой пары</li>
+                    <li>Гарантия 6 месяцев</li>
+                    <li>Возврат в течение 14 дней</li>
+                    <li>Сертифицированная продукция</li>
+                </ul>
+            </div>
+            <div class="feature-card-modern">
+                <div class="feature-icon-box">
+                    <span class="feature-emoji">🤝</span>
+                </div>
+                <h3>Индивидуальный подход</h3>
+                <p>Наши консультанты всегда готовы помочь вам с выбором размера и подобрать модель под ваш стиль жизни и особенности стопы.</p>
+                <ul class="feature-list">
+                    <li>Профессиональные консультанты</li>
+                    <li>Помощь в подборе размера</li>
+                    <li>Рекомендации по уходу</li>
+                    <li>Персональные скидки</li>
+                </ul>
+            </div>
+            <div class="feature-card-modern">
+                <div class="feature-icon-box">
+                    <span class="feature-emoji">💰</span>
+                </div>
+                <h3>Честные цены</h3>
+                <p>Мы работаем напрямую с производителями, поэтому можем предлагать лучшие цены без лишних посредников и наценок.</p>
+                <ul class="feature-list">
+                    <li>Прямые поставки</li>
+                    <li>Регулярные акции</li>
+                    <li>Система лояльности</li>
+                    <li>Рассрочка 0%</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ГАЛЕРЕЯ МАГАЗИНА -->
+    <section class="about-gallery">
+        <div class="section-header">
+            <span class="section-badge">ГАЛЕРЕЯ</span>
+            <h2>Наш магазин изнутри</h2>
+            <p>Загляните к нам в гости виртуально</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item gallery-item-large">
+                <img src="{{ url_for('static', filename='gallery1.jpg') }}" 
+                     alt="Интерьер магазина"
+                     onerror="this.parentElement.style.display='none'">
+                <div class="gallery-overlay">
+                    <span>Наш showroom</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='gallery2.jpg') }}" 
+                     alt="Коллекция"
+                     onerror="this.parentElement.style.display='none'">
+                <div class="gallery-overlay">
+                    <span>Коллекция</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='gallery3.jpg') }}" 
+                     alt="Новинки"
+                     onerror="this.parentElement.style.display='none'">
+                <div class="gallery-overlay">
+                    <span>Новинки</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='gallery4.jpg') }}" 
+                     alt="Команда"
+                     onerror="this.parentElement.style.display='none'">
+                <div class="gallery-overlay">
+                    <span>Команда</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='gallery5.jpg') }}" 
+                     alt="Детали"
+                     onerror="this.parentElement.style.display='none'">
+                <div class="gallery-overlay">
+                    <span>Детали</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОМАНДА -->
+    <section class="about-team">
+        <div class="section-header">
+            <span class="section-badge">КОМАНДА</span>
+            <h2>Наши специалисты</h2>
+            <p>Профессионалы, которые помогут вам с выбором</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-photo">
+                    <img src="{{ url_for('static', filename='team1.jpg') }}" 
+                         alt="Анна"
+                         onerror="this.src='{{ url_for('static', filename='default-avatar.jpg') }}'">
+                </div>
+                <h4>Анна Петрова</h4>
+                <p class="team-role">Управляющая</p>
+                <p class="team-desc">10 лет опыта в обувном бизнесе</p>
+            </div>
+            <div class="team-card">
+                <div class="team-photo">
+                    <img src="{{ url_for('static', filename='team2.jpg') }}" 
+                         alt="Михаил"
+                         onerror="this.src='{{ url_for('static', filename='default-avatar.jpg') }}'">
+                </div>
+                <h4>Михаил Соколов</h4>
+                <p class="team-role">Старший консультант</p>
+                <p class="team-desc">Эксперт по мужской обуви</p>
+            </div>
+            <div class="team-card">
+                <div class="team-photo">
+                    <img src="{{ url_for('static', filename='team3.jpg') }}" 
+                         alt="Елена"
+                         onerror="this.src='{{ url_for('static', filename='default-avatar.jpg') }}'">
+                </div>
+                <h4>Елена Васильева</h4>
+                <p class="team-role">Консультант</p>
+                <p class="team-desc">Специалист по детской обуви</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ С КАРТОЙ -->
+    <section class="about-contacts-modern">
+        <div class="container-split">
+            <div class="contacts-info">
+                <span class="section-badge">КОНТАКТЫ</span>
+                <h2>Свяжитесь с нами</h2>
+                <p class="contacts-intro">Если у вас возникли вопросы по наличию товара, пожелания или вы хотите оставить отзыв — мы всегда рады обратной связи!</p>
+                
+                <div class="contacts-list">
+                    <div class="contact-item">
+                        <div class="contact-icon-box">
+                            <span>📱</span>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Телефон</h4>
+                            <p>+7 (999) 123-45-67</p>
+                            <p class="contact-note">Ежедневно с 10:00 до 21:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-box">
+                            <span>✉️</span>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@obuv-shop.ru</p>
+                            <p class="contact-note">Отвечаем в течение 24 часов</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-box">
+                            <span>📍</span>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Адрес</h4>
+                            <p>г. Москва, ул. Обувная, д. 15</p>
+                            <p class="contact-note">ТЦ "Модный", 2 этаж</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-box">
+                            <span>🕐</span>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Режим работы</h4>
+                            <p>Пн-Пт: 10:00 - 21:00</p>
+                            <p class="contact-note">Сб-Вс: 11:00 - 20:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-section">
+                    <h4>Мы в социальных сетях</h4>
+                    <div class="social-links-modern">
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">TG</a>
+                        <a href="#" class="social-link">OK</a>
+                        <a href="#" class="social-link">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts-map">
+                <div class="map-placeholder">
+                    <img src="{{ url_for('static', filename='map.jpg') }}" 
+                         alt="Карта"
+                         onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:#f0f0f0;border-radius:20px;font-size:1.2rem;color:#666;\'>📍 г. Москва, ул. Обувная, д. 15</div>'">
+                    <div class="map-overlay">
+                        <span>📍 г. Москва, ул. Обувная, д. 15</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA БЛОК -->
+    <section class="about-cta">
+        <div class="cta-content">
+            <h2>Готовы найти свою идеальную пару?</h2>
+            <p>Загляните в наш каталог или приходите в магазин — мы поможем вам с выбором!</p>
+            <div class="cta-buttons">
+                <a href="/prod" class="cta-btn-primary">Смотреть каталог →</a>
+                <a href="/onas" class="cta-btn-secondary">Записаться на примерку</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФИНАЛЬНЫЙ БЛОК -->
+    <section class="about-footer-modern">
+        <div class="footer-content">
+            <div class="footer-heart">💗</div>
+            <h3>Спасибо, что выбираете нас!</h3>
+            <p>Мы ценим каждого нашего клиента и делаем всё, чтобы вы остались довольны</p>
+        </div>
+    </section>
+
+</div>
+
+{% endblock onas %}

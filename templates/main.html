@@ -1,0 +1,116 @@
+{% extends 'basa.html' %}
+{% block main %}
+
+<main class="main-container">
+
+    <section class="main-hero">
+        <span class="hero-label">ВАША ИДЕАЛЬНАЯ ПАРА</span>
+        <h1>Комфорт начинается с правильной обуви</h1>
+        <p class="hero-subtitle">
+            Стильные модели на каждый день и для особых случаев
+        </p>
+        <a href="/prod" class="hero-btn">Смотреть каталог <span>→</span></a>
+
+        <div class="hero-benefits">
+            <span>✓ Удобная посадка</span>
+            <span>✓ Продуманный стиль</span>
+            <span>✓ На любой сезон</span>
+        </div>
+    </section>
+
+    <section class="main-intro">
+        <div class="intro-icon">👟</div>
+        <div>
+            <h2>Обувь, в которой удобно быть собой</h2>
+            <p>
+                В нашем магазине собраны модели для повседневной жизни,
+                работы и особых случаев. Выбирайте пару, которая подходит
+                вашему стилю и планам.
+            </p>
+        </div>
+    </section>
+
+    <section class="main-features">
+        <div class="section-heading">
+            <span class="section-eyebrow">ПОЧЕМУ ВЫБИРАЮТ НАС</span>
+            <h2>Продумано для вашего комфорта</h2>
+        </div>
+
+        <div class="features-grid">
+            <article class="feature-card">
+                <div class="feature-icon">🌿</div>
+                <h3>Качественные материалы</h3>
+                <p>Внимательно подходим к выбору материалов и отделки каждой модели.</p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>На любой случай</h3>
+                <p>Повседневные, сезонные и нарядные модели — выбирайте свой стиль.</p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon">💬</div>
+                <h3>Помощь с выбором</h3>
+                <p>Подскажем, как подобрать модель и размер, чтобы вам было удобно.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="main-categories">
+        <div class="section-heading">
+            <span class="section-eyebrow">НАЙДИТЕ СВОЮ ПАРУ</span>
+            <h2>Выбирайте по настроению</h2>
+        </div>
+
+        <div class="categories-grid">
+            <a href="/prod" class="category-tile category-tile-light">
+                <span class="category-emoji">👟</span>
+                <span class="category-name">На каждый день</span>
+                <span class="category-link">Смотреть каталог →</span>
+            </a>
+
+            <a href="/prod" class="category-tile category-tile-pink">
+                <span class="category-emoji">👠</span>
+                <span class="category-name">Для особого случая</span>
+                <span class="category-link">Смотреть каталог →</span>
+            </a>
+
+            <a href="/prod" class="category-tile category-tile-peach">
+                <span class="category-emoji">🥾</span>
+                <span class="category-name">Для прохладной погоды</span>
+                <span class="category-link">Смотреть каталог →</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="main-care">
+        <div class="care-icon">🧴</div>
+        <div>
+            <h2>Небольшой совет по уходу</h2>
+            <p>
+                После прогулки очищайте обувь и сушите её при комнатной
+                температуре. Для кожи и замши используйте подходящие средства
+                по уходу — так любимая пара дольше сохранит вид.
+            </p>
+        </div>
+    </section>
+
+    <section class="main-showcase">
+        <div class="showcase-image">
+            <img src="{{ url_for('static', filename='tyfla.jpg') }}" alt="Туфли из каталога">
+        </div>
+        <div class="showcase-text">
+            <span class="section-eyebrow">ВРЕМЯ ОБНОВИТЬ ГАРДЕРОБ</span>
+            <h2>Пара, которая подойдёт именно вам</h2>
+            <p>
+                Загляните в каталог и найдите обувь для прогулок, работы
+                или важных событий.
+            </p>
+            <a href="/prod" class="cta-btn">Перейти в каталог →</a>
+        </div>
+    </section>
+
+</main>
+
+{% endblock main %}
